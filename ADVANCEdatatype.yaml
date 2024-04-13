@@ -1,0 +1,161 @@
+student: !!seq
+  - marks
+  - name
+  - roll_no
+
+# this is like this also
+students : [Ram, Shayam, Radhika]
+---
+
+
+
+# some of the keys of the sequence will be empty(SPARSE SEQUENCE)
+sparse seq:
+  - hi
+  - hello
+  - 
+  - Null
+  - bye
+  - enjoy
+  - how
+---
+
+
+#NESTED SEQUENCE(adding sub items)
+-frits
+  - banana
+  - apple
+  - tomato
+  - grapes
+-veg
+  - chilli
+  - green peanut
+  - brinjal
+  - cauliflower
+  - pumpkin
+
+# this may be like this also
+-
+  -name
+  -surname
+  -class
+  -college
+  -marks
+-
+  - India
+  - China
+  - Russia
+  - Brazil
+  - USA
+  - Japan
+---
+
+#  " key : value "   pairs are called maps
+!!map
+
+#NESTED MAPS(map within a map)
+name: Dhanesh sakre
+Details:
+  age: 23
+  company: abc
+  role: xyz
+
+#same as
+name: Dhanesh sakre
+Details: {age: 23, company: abc, role: xyz}
+
+---
+
+#pairs: keys may have duplicate value
+#pairs
+
+pair example: !!pairs
+ - job1: student
+ - job2: teacher
+
+ #same as
+ pair example: !!pairs [job1: student, job2: teacher]
+ #this will be an array of hastables
+
+ ---
+
+ #  !!set will be allow us to have unique values
+name: !!set
+  ?dhanesh
+  ?Ram
+  ?Radha
+  ?Shaym
+  ?alex
+  ?jonh
+---
+
+#dictionary   !!omap
+parties: !!omap
+  - BJP:
+      age: 34
+      states: 13
+      leader: Narendra Modi
+  - AAP:
+      age: 34
+      states: 13
+      leader: NARENDRA MODI
+  - CONGRESS:
+      age: 55
+      states: 7
+      leader: RAHUL GANDHI
+  - RJD:
+      age: 22
+      states: 2
+      leader: NITISH KUMAR
+
+---
+
+
+#RESUSING SOME PROPERTIES  using "ANCHORS"
+likings: &base
+  fav fruit: mango
+  dislike: graps
+
+person1:
+  name: dhanesh sakre
+  fav fruit: mango
+  dislike: graps
+
+#same as
+person1:
+  name: dhanesh sakre
+  <<: *base
+
+person2:
+  name: subham thakre
+  fav fruit: mango
+  dislike: graps
+
+  #same as
+person2:
+  name: subham thakre
+  <<: *base
+
+person3:
+  name: rahul patle
+  fav fruit: mango
+  dislike: graps
+
+#same as
+person3:
+  name: rahul patle
+  <<: *base
+
+
+#the value of dislike will be overriden by new value for the same key
+person4:
+  name: naina kapoor
+  fav fruit: mango
+  dislike: cherry
+
+#same as
+person4:
+  name: naina kapoor
+  <<: *base
+  dislike: cherry
+---

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8">
+<schools>
+    <students>
+        <student>
+            <firstName>Dhanesh</firstName>
+            <surname>sakre</surname>
+            <age>36</age>
+            <job>DevOps</job>
+        </student>
+    </students>
+</schools>
+
+<!-- this files are not easy to read thats why these are less popular. -->

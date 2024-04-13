@@ -1,0 +1,65 @@
+**** like python and jave, YAML can store dictionary and hashmaps... in 
+"key : vlaue" pairs.
+
+"key" : "value"
+"apple" : "I am  a red fruit."
+8843389 : "this is roll no"
+---
+
+#list 
+- apple
+- mango
+- banana
+- cherry
+- grapes
+- APPLE     #apple and APPLE is different coz YAML is case sensitive language.
+
+---
+
+# this list would look like this in JSON file:
+[
+  "apple",
+  "mango",
+  "banana",
+  "cherry",
+  "grapes",
+  "APPLE"
+]
+
+---
+#BLOCK STYLE
+
+cities:
+  - mumbai
+  - new delhi
+  - hydrabad
+  - pune
+  - bangluru
+  - chennai       #indentation is important
+---
+
+# in JSON this would look like this::
+{
+  "cities": [
+    "mumbai",
+    "new delhi",
+    "hydrabad",
+    "pune",
+    "bangluru",
+    "chennai"
+  ]
+}
+---
+
+NOTE: (1) we can check for validation in YAML validator (https://www.yamllint.com/)
+      (2) we can seperate objects by using 3 consecutive dashes ("---").
+      (3) to tell the document is ended, use 3 dots ("...")
+      (4) we can convert YAML file to JSON file using - https://onlineyamltools.com/convert-yaml-to-json
+
+---
+cities: [New Delhi, Hydrabad]
+
+---
+{fruit : "mango", quantity : 56, "sweet"}
+
+...

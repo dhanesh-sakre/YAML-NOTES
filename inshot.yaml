@@ -32,11 +32,11 @@ DATA SERIALIZATION:
 
 
       [object-->  stream_of_byteS ] ---> :DEVICE(YAML/DATABASE/MEMORY): ----> [stream_of_bytes ----> object]
-
-        DATA SERIALIZATION                                  DATA DESRIALIZATION
-          ==============                                  ===================
-
-
+                  |                                                                     |
+        DATA SERIALIZATION                                                        DATA DESRIALIZATION
+          ==============                                                           ===================
+                
+              
 ****** data serialization languages ---> YAML, JSON, XML
 we can store data in format in code and use this files to convert into object.
 

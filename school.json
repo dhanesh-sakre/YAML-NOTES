@@ -1,0 +1,20 @@
+{
+    "school": [
+        {
+            "name": "Radha",
+            "age": 22,
+            "job": "DevOps",
+            "details": [
+                {
+                    "emopoyee_id": 8484939,
+                    "working_hours": 6,
+                    "account_no": 7748338,
+                    "salary": 75000
+                }
+
+            ]
+        }
+    ]
+
+
+}

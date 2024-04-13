@@ -1,0 +1,56 @@
+# STRING VARIABLES: can be written in 3 ways
+
+myself : DHANESH SAKRE
+surname : "Sakre"
+job : 'swe'
+
+bio : |
+hey my name is Dhanesh Sakre.
+coding is very cool thing.        
+---
+
+#write a single line in multiple line.
+important: >
+This all 
+will be in 
+a single(one) line.
+
+#this is same as
+important: This all will be in a single(one) line.
+
+---
+
+Numbers : 67838     #(int)
+marks : 73.83       #(float)
+Strong : yes       #{booleanvalue-> yes (y, Y, yes, YES)  /   NO(n, N, False, false)}
+---
+
+# specify the type:
+
+# 1) int
+zero : !!int 56
+positiveNumber : !!int 74
+negetiveNumber : !!int -64
+binaryNumber : !!int 0b11101
+octaNumber : !!int 03937
+hexadecimalNumber : !!int 0x43
+commaValues : !!int +6_37_000    # 6,37,000
+exponential numbers : 8.067E67
+
+
+# 2) float
+marks : !!float 93.77
+infinity : !!float .inf
+not a number : .nan
+
+# 3) stirng
+firstName : !!str Dhanesh
+
+# 4) NULL 
+surname : !!null NULL #or Null or null
+
+# 5)TIME-STAMPS
+India time: 2022-02-05 10:30:00.10 +5:30 (with timezone)
+no time zone: 2022-02-05 10:30:00.10
+
+
