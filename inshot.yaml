@@ -1,0 +1,71 @@
+  YAML:
+  extentions -->   .yaml / .yml         both are valid.
+
+  it's not a programming language.
+
+  previously known as--> "yet another markup language".
+
+  now a days : yaml ain't markup language.
+
+--------
+ yaml is a markup language, it means it contians data in a form like
+child parent relationship. the relationship like, what goes inside and how they are layered
+is the makup language just like HTML.
+---------
+
+* similar to JSON and XML files
+* data format used to exchange data
+* stores only data (not commands)
+-----------
+
+as we have studie that python is object oriented language and what object is.
+here it is going to be used.
+object(code + data) : An object is a component of a program that knows how to perform certain actions 
+      and how to interact with other elements of the program.
+         Objects are the basic units of object-oriented programming like python.
+----------------------------
+
+DATA SERIALIZATION:
+===================  to convert objects into complex data structure like stream of
+                     bytes(chunks of data). This is data serialization.
+                     this makes transmission easier.
+
+
+      [object-->  stream_of_byteS ] ---> :DEVICE(YAML/DATABASE/MEMORY): ----> [stream_of_bytes ----> object]
+
+        DATA SERIALIZATION                                  DATA DESRIALIZATION
+          ==============                                  ===================
+
+
+****** data serialization languages ---> YAML, JSON, XML
+we can store data in format in code and use this files to convert into object.
+
+
+DATA DESERIALIZATION:
+====================== We take this data from device and cnvert into data objects. This
+                          is called data deserialization.
+
+--------------------------------------------------
+
+
+USE case: [configuration files for DOCKER, CUBERNATES etc..]
+===========
+ let's take an example 
+let's say we want to run 30 apps on 5 instances, 6 apps each.
+kucbernetes is gonna say that ok I will do this for you. I have object like a pot.
+
+but we need to tell it how the objects should be look like... 
+we shall give it a written document, in which we are gonna specify the things we want..
+and this files may be JSON or YAML OR XML etc....
+
+
+
+Benifits:
+==========
+* HUMAN READABLE, simple and easy to read
+* strict synatax, indentation is important like Python
+* easily convertable to JSON and XML
+* most Popular languages for usecase like this
+* more powerful when representing complex data 
+* can use various tools by using it like PARSSERS(reading the data is easy) etc...
+
